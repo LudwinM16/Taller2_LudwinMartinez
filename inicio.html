@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" />
+    <title>Taller 2-Diferido</title>
+</head>
+<body>
+    <header>
+        <h1>Plantilla mensual de una fábrica</h1>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <h4>Por favor, seleccione el cargo que desempeña en la empresa</h4>
+            <label for="cargo">
+                <select name="cargo" id="cargo">
+                    <option value="operario">Operario</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="gerente">Gerente</option>
+                </select>
+            </label>
+            <br><br>    
+            <label>
+                Por favor digite su nombre:
+                <input type="text" name="nombre" id="nom">
+            </label>
+            <br><br>
+            <label>
+                Por favor digite su sueldo base actual:
+                <input type="number" name="sueldoBase" id="sueldo" min="0">
+            </label>
+            <p>
+                <input type="button" value="GenerarPlanilla" onclick='generar();'>
+            </p>
+        </fieldset>
+        <div id="tabla"></div>    
+        <script src="js/funciones.js"></script>
+    </form>
+</body>
+</html>
